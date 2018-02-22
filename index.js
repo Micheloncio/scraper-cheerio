@@ -7,7 +7,7 @@ const scraperRouter = express.Router()
 scraperRouter.route('/')
 .get((req, res)=>{
     
-    const url = 'https://www.dominospizza.es/carta-de-pizzas'
+    const url = 'pizas-url'
     try {
         request(url, function(error, response, html ){
             if(error) throw error
